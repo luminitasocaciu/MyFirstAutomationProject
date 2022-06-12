@@ -12,7 +12,7 @@ public class BaseTest {
 
     @Parameters({ "browser" })
     @BeforeMethod(alwaysRun = true)
-    public void setUp(@Optional("chrome") String browser) {
+    public void setUp(@Optional("firefox") String browser) {
         BrowserDriverFactory factory = new BrowserDriverFactory(browser);
         driver = factory.createDriver();
 
